@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  LoginTableViewCell.h
 //  Pyxis
 //
 //  Created by Qiuhao Zhang on 4/17/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginTableViewCell : UITableViewCell
 
 @end

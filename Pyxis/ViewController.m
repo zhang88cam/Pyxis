@@ -8,8 +8,9 @@
 
 #import "ViewController.h"
 #import "LoginViewController.h"
+#import "MainMenu.h"
 
-@interface ViewController ()
+@interface ViewController () <loginDelegate>
 {
     UINavigationController *loginNavigationController_;
     LoginViewController *loginViewController_;
@@ -32,8 +33,8 @@
 }
 
 - (IBAction)singleFingerTap:(UIGestureRecognizer *)sender {
+    self.loginNavigationController.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentModalViewController:self.loginNavigationController animated:YES];
-    NSLog(@"pop up log in window");
 
 }
 
@@ -71,6 +72,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
+}
+
+#pragma mark - Log in Delegate
+-(void)loginToMenu
+{
+    NSLog(@"Log in done");
+    MainMenu *mainMenu = [[MainMenu alloc] initWithNibName:@"MainMenu" bundle:nil];
+    [self.navigationController pushViewController:mainMenu animated:YES];
 }
 
 @end

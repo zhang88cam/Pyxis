@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1902E77F153E013500809FED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E77D153E013500809FED /* LoginViewController.m */; };
+		1902E780153E013500809FED /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E77E153E013500809FED /* LoginViewController.xib */; };
+		1902E783153E085800809FED /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E782153E085800809FED /* LoginTableViewCell.m */; };
+		1902E787153E08AF00809FED /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E785153E08AF00809FED /* MainMenu.m */; };
+		1902E788153E08AF00809FED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E786153E08AF00809FED /* MainMenu.xib */; };
+		1902E791153E0C7B00809FED /* RemoveMed.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E78F153E0C7B00809FED /* RemoveMed.m */; };
+		1902E792153E0C7B00809FED /* RemoveMed.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E790153E0C7B00809FED /* RemoveMed.xib */; };
+		1902E796153E125500809FED /* PatientList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E794153E125500809FED /* PatientList.m */; };
+		1902E797153E125500809FED /* PatientList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E795153E125500809FED /* PatientList.xib */; };
+		1902E79B153E138A00809FED /* RemoveMeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E799153E138A00809FED /* RemoveMeds.m */; };
+		1902E79C153E138A00809FED /* RemoveMeds.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E79A153E138A00809FED /* RemoveMeds.xib */; };
 		198B9E1C153DDCC000AC3606 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198B9E1B153DDCC000AC3606 /* UIKit.framework */; };
 		198B9E1E153DDCC000AC3606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198B9E1D153DDCC000AC3606 /* Foundation.framework */; };
 		198B9E20153DDCC000AC3606 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198B9E1F153DDCC000AC3606 /* CoreGraphics.framework */; };
@@ -15,11 +26,26 @@
 		198B9E2C153DDCC000AC3606 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 198B9E2B153DDCC000AC3606 /* AppDelegate.m */; };
 		198B9E2F153DDCC000AC3606 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198B9E2E153DDCC000AC3606 /* ViewController.m */; };
 		198B9E32153DDCC000AC3606 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 198B9E30153DDCC000AC3606 /* ViewController.xib */; };
-		198B9E3E153DDF5800AC3606 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198B9E3C153DDF5800AC3606 /* LoginViewController.m */; };
-		198B9E3F153DDF5800AC3606 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 198B9E3D153DDF5800AC3606 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1902E77C153E013500809FED /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1902E77D153E013500809FED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1902E77E153E013500809FED /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		1902E781153E085800809FED /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
+		1902E782153E085800809FED /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
+		1902E784153E08AF00809FED /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		1902E785153E08AF00809FED /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
+		1902E786153E08AF00809FED /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		1902E78E153E0C7B00809FED /* RemoveMed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveMed.h; sourceTree = "<group>"; };
+		1902E78F153E0C7B00809FED /* RemoveMed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveMed.m; sourceTree = "<group>"; };
+		1902E790153E0C7B00809FED /* RemoveMed.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoveMed.xib; sourceTree = "<group>"; };
+		1902E793153E125500809FED /* PatientList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientList.h; sourceTree = "<group>"; };
+		1902E794153E125500809FED /* PatientList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientList.m; sourceTree = "<group>"; };
+		1902E795153E125500809FED /* PatientList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientList.xib; sourceTree = "<group>"; };
+		1902E798153E138A00809FED /* RemoveMeds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveMeds.h; sourceTree = "<group>"; };
+		1902E799153E138A00809FED /* RemoveMeds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveMeds.m; sourceTree = "<group>"; };
+		1902E79A153E138A00809FED /* RemoveMeds.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoveMeds.xib; sourceTree = "<group>"; };
 		198B9E17153DDCC000AC3606 /* Pyxis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pyxis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198B9E1B153DDCC000AC3606 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		198B9E1D153DDCC000AC3606 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -33,9 +59,6 @@
 		198B9E2D153DDCC000AC3606 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		198B9E2E153DDCC000AC3606 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		198B9E31153DDCC000AC3606 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		198B9E3B153DDF5800AC3606 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
-		198B9E3C153DDF5800AC3606 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
-		198B9E3D153DDF5800AC3606 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +105,28 @@
 		198B9E21153DDCC000AC3606 /* Pyxis */ = {
 			isa = PBXGroup;
 			children = (
-				198B9E3B153DDF5800AC3606 /* LoginViewController.h */,
-				198B9E3C153DDF5800AC3606 /* LoginViewController.m */,
-				198B9E3D153DDF5800AC3606 /* LoginViewController.xib */,
 				198B9E2A153DDCC000AC3606 /* AppDelegate.h */,
 				198B9E2B153DDCC000AC3606 /* AppDelegate.m */,
 				198B9E2D153DDCC000AC3606 /* ViewController.h */,
 				198B9E2E153DDCC000AC3606 /* ViewController.m */,
 				198B9E30153DDCC000AC3606 /* ViewController.xib */,
+				1902E77C153E013500809FED /* LoginViewController.h */,
+				1902E77D153E013500809FED /* LoginViewController.m */,
+				1902E77E153E013500809FED /* LoginViewController.xib */,
+				1902E781153E085800809FED /* LoginTableViewCell.h */,
+				1902E782153E085800809FED /* LoginTableViewCell.m */,
+				1902E784153E08AF00809FED /* MainMenu.h */,
+				1902E785153E08AF00809FED /* MainMenu.m */,
+				1902E786153E08AF00809FED /* MainMenu.xib */,
+				1902E78E153E0C7B00809FED /* RemoveMed.h */,
+				1902E78F153E0C7B00809FED /* RemoveMed.m */,
+				1902E790153E0C7B00809FED /* RemoveMed.xib */,
+				1902E798153E138A00809FED /* RemoveMeds.h */,
+				1902E799153E138A00809FED /* RemoveMeds.m */,
+				1902E79A153E138A00809FED /* RemoveMeds.xib */,
+				1902E793153E125500809FED /* PatientList.h */,
+				1902E794153E125500809FED /* PatientList.m */,
+				1902E795153E125500809FED /* PatientList.xib */,
 				198B9E22153DDCC000AC3606 /* Supporting Files */,
 			);
 			path = Pyxis;
@@ -158,7 +195,11 @@
 			files = (
 				198B9E26153DDCC000AC3606 /* InfoPlist.strings in Resources */,
 				198B9E32153DDCC000AC3606 /* ViewController.xib in Resources */,
-				198B9E3F153DDF5800AC3606 /* LoginViewController.xib in Resources */,
+				1902E780153E013500809FED /* LoginViewController.xib in Resources */,
+				1902E788153E08AF00809FED /* MainMenu.xib in Resources */,
+				1902E792153E0C7B00809FED /* RemoveMed.xib in Resources */,
+				1902E797153E125500809FED /* PatientList.xib in Resources */,
+				1902E79C153E138A00809FED /* RemoveMeds.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +213,12 @@
 				198B9E28153DDCC000AC3606 /* main.m in Sources */,
 				198B9E2C153DDCC000AC3606 /* AppDelegate.m in Sources */,
 				198B9E2F153DDCC000AC3606 /* ViewController.m in Sources */,
-				198B9E3E153DDF5800AC3606 /* LoginViewController.m in Sources */,
+				1902E77F153E013500809FED /* LoginViewController.m in Sources */,
+				1902E783153E085800809FED /* LoginTableViewCell.m in Sources */,
+				1902E787153E08AF00809FED /* MainMenu.m in Sources */,
+				1902E791153E0C7B00809FED /* RemoveMed.m in Sources */,
+				1902E796153E125500809FED /* PatientList.m in Sources */,
+				1902E79B153E138A00809FED /* RemoveMeds.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +332,7 @@
 				198B9E37153DDCC000AC3606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
