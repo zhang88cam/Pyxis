@@ -53,6 +53,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"View did load");
     LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    loginVC.delegate = self;
     self.loginViewController = loginVC;
     UINavigationController *loginNavController = [[UINavigationController alloc] initWithRootViewController:loginViewController_];
     self.loginNavigationController = loginNavController;

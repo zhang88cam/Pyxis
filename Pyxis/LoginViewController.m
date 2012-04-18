@@ -37,7 +37,6 @@
     [LoginButton release];
     [CancelButton release];
     [loginTableView release];
-    [delegate release];
     [super dealloc];
 }
 
@@ -45,7 +44,7 @@
 
 - (IBAction)LoginButton:(id)sender {
     // Push a new View Controller
-    [self respondsToSelector:@selector(loginToMenu:)];
+    [self.delegate loginToMenu];
     [self dismissModalViewControllerAnimated:YES];
 }
 - (IBAction)CancelButton:(id)sender {
@@ -60,7 +59,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Log in";
+    self.title = @"LOGIN";
     self.loginTableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]
                                                        style:UITableViewStylePlain];
     self.loginTableView.dataSource = self;
@@ -100,7 +99,12 @@
     }
     
     // Configure the cell.
-    cell.textLabel.text = @"User ID";
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"User ID";
+ 
+    }
+    else
+        cell.textLabel.text = @"Password";
     //    
     //    cell.detailTextLabel.text = detailedText;
     return cell;
