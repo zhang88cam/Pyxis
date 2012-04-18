@@ -51,7 +51,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"View did load");
+    self.navigationController.navigationBarHidden = YES;
+    UIImageView *imageView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"launch.jpg"]] autorelease];
+    [self.view addSubview:imageView];
     LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     loginVC.delegate = self;
     self.loginViewController = loginVC;

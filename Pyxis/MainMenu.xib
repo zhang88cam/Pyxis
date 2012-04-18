@@ -130,7 +130,7 @@
 					<object class="IBUIImageView" id="665330531">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 20}, {228, 89}}</string>
+						<string key="NSFrame">{{17, 20}, {190, 73}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="310355433"/>
@@ -294,6 +294,7 @@
 						<string key="NSFrame">{{381, 485}, {125, 125}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="403152416"/>
 						<string key="NSReuseIdentifierKey">_NS:569</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -418,6 +419,7 @@
 						<string key="NSFrame">{{0, 699}, {1024, 49}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:543</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -458,6 +460,126 @@
 						<reference key="destination" ref="766721923"/>
 					</object>
 					<int key="connectionID">3</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Remove</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="43636914"/>
+					</object>
+					<int key="connectionID">32</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Return</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="731870468"/>
+					</object>
+					<int key="connectionID">33</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Waste</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="239046309"/>
+					</object>
+					<int key="connectionID">34</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Patients</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="236081096"/>
+					</object>
+					<int key="connectionID">35</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">PatientSummary</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="985318711"/>
+					</object>
+					<int key="connectionID">36</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Load</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="885116237"/>
+					</object>
+					<int key="connectionID">37</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Refill</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="90429357"/>
+					</object>
+					<int key="connectionID">38</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Inventory</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="327558776"/>
+					</object>
+					<int key="connectionID">39</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">UnloadMenu</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="664065099"/>
+					</object>
+					<int key="connectionID">40</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Outdate</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="803583555"/>
+					</object>
+					<int key="connectionID">41</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Kits</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="996752899"/>
+					</object>
+					<int key="connectionID">42</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">ReportsMenu</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="915284728"/>
+					</object>
+					<int key="connectionID">43</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">UserMenu</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="123497650"/>
+					</object>
+					<int key="connectionID">44</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">SystemMenu</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="649798846"/>
+					</object>
+					<int key="connectionID">45</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">logo</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="665330531"/>
+					</object>
+					<int key="connectionID">46</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -661,13 +783,92 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">31</int>
+			<int key="maxID">46</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">MainMenu</string>
 					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="Inventory">UIImageView</string>
+						<string key="Kits">UIImageView</string>
+						<string key="Load">UIImageView</string>
+						<string key="Outdate">UIImageView</string>
+						<string key="PatientSummary">UIImageView</string>
+						<string key="Patients">UIImageView</string>
+						<string key="Refill">UIImageView</string>
+						<string key="Remove">UIImageView</string>
+						<string key="ReportsMenu">UIImageView</string>
+						<string key="Return">UIImageView</string>
+						<string key="SystemMenu">UIImageView</string>
+						<string key="UnloadMenu">UIImageView</string>
+						<string key="UserMenu">UIImageView</string>
+						<string key="Waste">UIImageView</string>
+						<string key="logo">UIImageView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="Inventory">
+							<string key="name">Inventory</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="Kits">
+							<string key="name">Kits</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="Load">
+							<string key="name">Load</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="Outdate">
+							<string key="name">Outdate</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="PatientSummary">
+							<string key="name">PatientSummary</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="Patients">
+							<string key="name">Patients</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="Refill">
+							<string key="name">Refill</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="Remove">
+							<string key="name">Remove</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ReportsMenu">
+							<string key="name">ReportsMenu</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="Return">
+							<string key="name">Return</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="SystemMenu">
+							<string key="name">SystemMenu</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="UnloadMenu">
+							<string key="name">UnloadMenu</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="UserMenu">
+							<string key="name">UserMenu</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="Waste">
+							<string key="name">Waste</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="logo">
+							<string key="name">logo</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/MainMenu.h</string>

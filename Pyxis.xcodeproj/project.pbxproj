@@ -26,6 +26,22 @@
 		198B9E2C153DDCC000AC3606 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 198B9E2B153DDCC000AC3606 /* AppDelegate.m */; };
 		198B9E2F153DDCC000AC3606 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198B9E2E153DDCC000AC3606 /* ViewController.m */; };
 		198B9E32153DDCC000AC3606 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 198B9E30153DDCC000AC3606 /* ViewController.xib */; };
+		199123D0153F4F7E00581FD2 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123CE153F4F7E00581FD2 /* launch.jpg */; };
+		199123D1153F4F7E00581FD2 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123CF153F4F7E00581FD2 /* logo.jpg */; };
+		199123E2153F524500581FD2 /* inventory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D4153F524500581FD2 /* inventory.jpg */; };
+		199123E3153F524500581FD2 /* kits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D5153F524500581FD2 /* kits.jpg */; };
+		199123E4153F524500581FD2 /* load.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D6153F524500581FD2 /* load.jpg */; };
+		199123E5153F524500581FD2 /* outdate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D7153F524500581FD2 /* outdate.jpg */; };
+		199123E6153F524500581FD2 /* patient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D8153F524500581FD2 /* patient.jpg */; };
+		199123E7153F524500581FD2 /* patientSummary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D9153F524500581FD2 /* patientSummary.jpg */; };
+		199123E8153F524500581FD2 /* refill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DA153F524500581FD2 /* refill.jpg */; };
+		199123E9153F524500581FD2 /* remove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DB153F524500581FD2 /* remove.jpg */; };
+		199123EA153F524500581FD2 /* reportMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DC153F524500581FD2 /* reportMenu.jpg */; };
+		199123EB153F524500581FD2 /* return.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DD153F524500581FD2 /* return.jpg */; };
+		199123EC153F524500581FD2 /* systemMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DE153F524500581FD2 /* systemMenu.jpg */; };
+		199123ED153F524500581FD2 /* unloadMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DF153F524500581FD2 /* unloadMenu.jpg */; };
+		199123EE153F524500581FD2 /* userMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123E0153F524500581FD2 /* userMenu.jpg */; };
+		199123EF153F524500581FD2 /* waste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123E1153F524500581FD2 /* waste.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +75,22 @@
 		198B9E2D153DDCC000AC3606 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		198B9E2E153DDCC000AC3606 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		198B9E31153DDCC000AC3606 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		199123CE153F4F7E00581FD2 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
+		199123CF153F4F7E00581FD2 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		199123D4153F524500581FD2 /* inventory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inventory.jpg; sourceTree = "<group>"; };
+		199123D5153F524500581FD2 /* kits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kits.jpg; sourceTree = "<group>"; };
+		199123D6153F524500581FD2 /* load.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = load.jpg; sourceTree = "<group>"; };
+		199123D7153F524500581FD2 /* outdate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outdate.jpg; sourceTree = "<group>"; };
+		199123D8153F524500581FD2 /* patient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = patient.jpg; sourceTree = "<group>"; };
+		199123D9153F524500581FD2 /* patientSummary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = patientSummary.jpg; sourceTree = "<group>"; };
+		199123DA153F524500581FD2 /* refill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = refill.jpg; sourceTree = "<group>"; };
+		199123DB153F524500581FD2 /* remove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = remove.jpg; sourceTree = "<group>"; };
+		199123DC153F524500581FD2 /* reportMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reportMenu.jpg; sourceTree = "<group>"; };
+		199123DD153F524500581FD2 /* return.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = return.jpg; sourceTree = "<group>"; };
+		199123DE153F524500581FD2 /* systemMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = systemMenu.jpg; sourceTree = "<group>"; };
+		199123DF153F524500581FD2 /* unloadMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unloadMenu.jpg; sourceTree = "<group>"; };
+		199123E0153F524500581FD2 /* userMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = userMenu.jpg; sourceTree = "<group>"; };
+		199123E1153F524500581FD2 /* waste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = waste.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +137,7 @@
 		198B9E21153DDCC000AC3606 /* Pyxis */ = {
 			isa = PBXGroup;
 			children = (
+				199123D3153F4F8800581FD2 /* images */,
 				198B9E2A153DDCC000AC3606 /* AppDelegate.h */,
 				198B9E2B153DDCC000AC3606 /* AppDelegate.m */,
 				198B9E2D153DDCC000AC3606 /* ViewController.h */,
@@ -141,6 +174,29 @@
 				198B9E29153DDCC000AC3606 /* Pyxis-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		199123D3153F4F8800581FD2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				199123D4153F524500581FD2 /* inventory.jpg */,
+				199123D5153F524500581FD2 /* kits.jpg */,
+				199123D6153F524500581FD2 /* load.jpg */,
+				199123D7153F524500581FD2 /* outdate.jpg */,
+				199123D8153F524500581FD2 /* patient.jpg */,
+				199123D9153F524500581FD2 /* patientSummary.jpg */,
+				199123DA153F524500581FD2 /* refill.jpg */,
+				199123DB153F524500581FD2 /* remove.jpg */,
+				199123DC153F524500581FD2 /* reportMenu.jpg */,
+				199123DD153F524500581FD2 /* return.jpg */,
+				199123DE153F524500581FD2 /* systemMenu.jpg */,
+				199123DF153F524500581FD2 /* unloadMenu.jpg */,
+				199123E0153F524500581FD2 /* userMenu.jpg */,
+				199123E1153F524500581FD2 /* waste.jpg */,
+				199123CE153F4F7E00581FD2 /* launch.jpg */,
+				199123CF153F4F7E00581FD2 /* logo.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +256,22 @@
 				1902E792153E0C7B00809FED /* RemoveMed.xib in Resources */,
 				1902E797153E125500809FED /* PatientList.xib in Resources */,
 				1902E79C153E138A00809FED /* RemoveMeds.xib in Resources */,
+				199123D0153F4F7E00581FD2 /* launch.jpg in Resources */,
+				199123D1153F4F7E00581FD2 /* logo.jpg in Resources */,
+				199123E2153F524500581FD2 /* inventory.jpg in Resources */,
+				199123E3153F524500581FD2 /* kits.jpg in Resources */,
+				199123E4153F524500581FD2 /* load.jpg in Resources */,
+				199123E5153F524500581FD2 /* outdate.jpg in Resources */,
+				199123E6153F524500581FD2 /* patient.jpg in Resources */,
+				199123E7153F524500581FD2 /* patientSummary.jpg in Resources */,
+				199123E8153F524500581FD2 /* refill.jpg in Resources */,
+				199123E9153F524500581FD2 /* remove.jpg in Resources */,
+				199123EA153F524500581FD2 /* reportMenu.jpg in Resources */,
+				199123EB153F524500581FD2 /* return.jpg in Resources */,
+				199123EC153F524500581FD2 /* systemMenu.jpg in Resources */,
+				199123ED153F524500581FD2 /* unloadMenu.jpg in Resources */,
+				199123EE153F524500581FD2 /* userMenu.jpg in Resources */,
+				199123EF153F524500581FD2 /* waste.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
