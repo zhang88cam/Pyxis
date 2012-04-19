@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RemoveMeds : UIViewController <UITabBarDelegate>
+@property (retain, nonatomic) IBOutlet UIImageView *Logo;
 @property (retain, nonatomic) IBOutlet UITableView *patientListTableView;
 @property (retain, nonatomic) IBOutlet UITabBar *actionsTabBar;
 

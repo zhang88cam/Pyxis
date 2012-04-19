@@ -12,6 +12,7 @@
 
 
 @implementation RemoveMeds
+@synthesize Logo;
 @synthesize patientListTableView;
 @synthesize actionsTabBar;
 @synthesize mainMenuButton;
@@ -39,6 +40,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.Logo.image = [UIImage imageNamed:@"logo.jpg"];
+    [self.view addSubview:self.Logo];
     MyPatientsTableViewController *myPatientsTVC = [[MyPatientsTableViewController alloc] initWithNibName:@"MyPatientsTableViewController" bundle:nil];
     [patientListTableView setDataSource:myPatientsTVC];
     [patientListTableView setDelegate:myPatientsTVC];
@@ -54,6 +57,7 @@
     [self setPatientListTableView:nil];
     [self setActionsTabBar:nil];
     [self setMainMenuButton:nil];
+    [self setLogo:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -69,6 +73,7 @@
     [patientListTableView release];
     [actionsTabBar release];
     [mainMenuButton release];
+    [Logo release];
     [super dealloc];
 }
 
