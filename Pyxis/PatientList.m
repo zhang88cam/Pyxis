@@ -10,8 +10,18 @@
 
 #import "PatientList.h"
 #import "SelectPatientsListTableViewController.h"
-#import "MyPatientsTableViewController.h"
 
+
+@interface PatientList()
+{
+    NSArray *allPatients_;
+    NSMutableArray *selectedPatients_;
+}
+
+@property(retain, nonatomic) NSArray *allPatients;
+@property (retain, nonatomic) NSMutableArray *selectedPatients;
+
+@end
 @implementation PatientList
 @synthesize Logo;
 @synthesize selectPatientsTableView;
@@ -21,6 +31,9 @@
 @synthesize AcceptBarButton;
 @synthesize DeselectAllButton;
 @synthesize CancelButton;
+
+@synthesize allPatients = allPatients_;
+@synthesize selectedPatients = selectedPatients_;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -53,6 +66,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.allPatients = [[NSArray alloc] initWithObjects:@"ANDERSON, PATRICIA",@"BRONZE, MICHAEL", @"OIAMOND, BILL", @"PEARLE, SOPHIA ANNE",@"QUARTZ, GEOGRE", nil];
+    
     self.Logo.image = [UIImage imageNamed:@"logo.jpg"];
     [self.view addSubview:self.Logo];
     
@@ -60,21 +76,19 @@
     [self.exitButton.layer setBorderWidth: 1.0];   
     
     SelectPatientsListTableViewController *selectPatientsTVC = [[SelectPatientsListTableViewController alloc] initWithNibName:@"SelectPatientsListTableViewController" bundle:nil];
+    selectPatientsTVC.allPatients = self.allPatients;
+    self.selectedPatients = selectPatientsTVC.selectedPatients;
     
-    MyPatientsTableViewController *myPatientsTVC = [[MyPatientsTableViewController alloc] initWithNibName:@"MyPatientsTableViewController" bundle:nil];
+    myPatientsTableView.delegate = self;
+    myPatientsTableView.dataSource = self;
+    
     [selectPatientsTableView setDataSource:selectPatientsTVC];
-    [myPatientsTableView setDataSource:myPatientsTVC];
     
 	[selectPatientsTableView setDelegate:selectPatientsTVC];
-    [myPatientsTableView setDelegate:myPatientsTVC];
     
 	selectPatientsTableView = selectPatientsTVC.tableView;
-    myPatientsTableView = myPatientsTVC.tableView;
     
     self.tabBar.delegate = self;
-    
-    NSLog(@"%@", tabBar.items);
-    
         
 }
 
@@ -108,6 +122,9 @@
     [DeselectAllButton release];
     [CancelButton release];
     [exitButton release];
+    
+    [allPatients_ release], allPatients_ = nil;
+    [selectedPatients_ release], selectedPatients_ = nil;
     [super dealloc];
 }
 
@@ -118,5 +135,48 @@
         NSLog(@"Select accept");
         [self.navigationController popViewControllerAnimated:YES];
     }
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    return [self.selectedPatients count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    // Configure the cell...
+    cell.textLabel.text = [self.selectedPatients objectAtIndex:[indexPath row]];
+    
+    
+    return cell;
+}
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return @"My patients";
+}
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Navigation logic may go here. Create and push another view controller.
+
+    
 }
 @end

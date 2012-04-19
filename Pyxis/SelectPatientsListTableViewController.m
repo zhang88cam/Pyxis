@@ -9,6 +9,8 @@
 #import "SelectPatientsListTableViewController.h"
 
 @implementation SelectPatientsListTableViewController
+@synthesize allPatients = allPatients_;
+@synthesize selectedPatients = selectedPatients_;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,17 +29,20 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (void)dealloc {
+    [allPatients_ release], allPatients_ =  nil;
+    [selectedPatients_ release], selectedPatients_ = nil;
+    [super dealloc];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.selectedPatients = [[NSMutableArray alloc] init];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
@@ -47,25 +52,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -84,7 +70,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return [self.allPatients count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -97,7 +83,7 @@
     }
     
     // Configure the cell...
-    cell.textLabel.text = @"Name";
+    cell.textLabel.text = [self.allPatients objectAtIndex:[indexPath row]];
     
     return cell;
 }
@@ -150,14 +136,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    [self.selectedPatients addObject:[self.allPatients objectAtIndex:[indexPath row]]];
+    NSLog(@"Select a patient");
+    NSLog(@"%@", self.selectedPatients);
+
 }
 
 @end

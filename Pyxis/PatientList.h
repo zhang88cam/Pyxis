@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PatientList : UIViewController <UITabBarDelegate>
+@interface PatientList : UIViewController <UITabBarDelegate,UITableViewDelegate, UITableViewDataSource >
 @property (retain, nonatomic) IBOutlet UIImageView *Logo;
 @property (retain, nonatomic) IBOutlet UITableView *selectPatientsTableView;
 @property (retain, nonatomic) IBOutlet UITableView *myPatientsTableView;

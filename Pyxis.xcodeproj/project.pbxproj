@@ -46,8 +46,6 @@
 		199881D81540B39A00251191 /* RemoveMedPatientsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199881D61540B39A00251191 /* RemoveMedPatientsList.xib */; };
 		19EF12A3154067CC000D376E /* SelectPatientsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EF12A1154067CC000D376E /* SelectPatientsListTableViewController.m */; };
 		19EF12A4154067CC000D376E /* SelectPatientsListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19EF12A2154067CC000D376E /* SelectPatientsListTableViewController.xib */; };
-		19EF12A9154068C9000D376E /* MyPatientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EF12A7154068C9000D376E /* MyPatientsTableViewController.m */; };
-		19EF12AA154068C9000D376E /* MyPatientsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19EF12A8154068C9000D376E /* MyPatientsTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,9 +101,6 @@
 		19EF12A0154067CC000D376E /* SelectPatientsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPatientsListTableViewController.h; sourceTree = "<group>"; };
 		19EF12A1154067CC000D376E /* SelectPatientsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPatientsListTableViewController.m; sourceTree = "<group>"; };
 		19EF12A2154067CC000D376E /* SelectPatientsListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPatientsListTableViewController.xib; sourceTree = "<group>"; };
-		19EF12A6154068C9000D376E /* MyPatientsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPatientsTableViewController.h; sourceTree = "<group>"; };
-		19EF12A7154068C9000D376E /* MyPatientsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPatientsTableViewController.m; sourceTree = "<group>"; };
-		19EF12A8154068C9000D376E /* MyPatientsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPatientsTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,24 +161,8 @@
 				1902E784153E08AF00809FED /* MainMenu.h */,
 				1902E785153E08AF00809FED /* MainMenu.m */,
 				1902E786153E08AF00809FED /* MainMenu.xib */,
-				1902E78E153E0C7B00809FED /* RemoveMed.h */,
-				1902E78F153E0C7B00809FED /* RemoveMed.m */,
-				1902E790153E0C7B00809FED /* RemoveMed.xib */,
-				1902E798153E138A00809FED /* RemoveMeds.h */,
-				1902E799153E138A00809FED /* RemoveMeds.m */,
-				1902E79A153E138A00809FED /* RemoveMeds.xib */,
-				1902E793153E125500809FED /* PatientList.h */,
-				1902E794153E125500809FED /* PatientList.m */,
-				1902E795153E125500809FED /* PatientList.xib */,
-				199881D41540B39A00251191 /* RemoveMedPatientsList.h */,
-				199881D51540B39A00251191 /* RemoveMedPatientsList.m */,
-				199881D61540B39A00251191 /* RemoveMedPatientsList.xib */,
-				19EF12A6154068C9000D376E /* MyPatientsTableViewController.h */,
-				19EF12A7154068C9000D376E /* MyPatientsTableViewController.m */,
-				19EF12A8154068C9000D376E /* MyPatientsTableViewController.xib */,
-				19EF12A0154067CC000D376E /* SelectPatientsListTableViewController.h */,
-				19EF12A1154067CC000D376E /* SelectPatientsListTableViewController.m */,
-				19EF12A2154067CC000D376E /* SelectPatientsListTableViewController.xib */,
+				199881DA1540C2FE00251191 /* Remove */,
+				199881D91540C2E700251191 /* Patients */,
 				198B9E22153DDCC000AC3606 /* Supporting Files */,
 			);
 			path = Pyxis;
@@ -221,6 +200,35 @@
 				199123CF153F4F7E00581FD2 /* logo.jpg */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		199881D91540C2E700251191 /* Patients */ = {
+			isa = PBXGroup;
+			children = (
+				1902E793153E125500809FED /* PatientList.h */,
+				1902E794153E125500809FED /* PatientList.m */,
+				1902E795153E125500809FED /* PatientList.xib */,
+				19EF12A0154067CC000D376E /* SelectPatientsListTableViewController.h */,
+				19EF12A1154067CC000D376E /* SelectPatientsListTableViewController.m */,
+				19EF12A2154067CC000D376E /* SelectPatientsListTableViewController.xib */,
+			);
+			name = Patients;
+			sourceTree = "<group>";
+		};
+		199881DA1540C2FE00251191 /* Remove */ = {
+			isa = PBXGroup;
+			children = (
+				1902E78E153E0C7B00809FED /* RemoveMed.h */,
+				1902E78F153E0C7B00809FED /* RemoveMed.m */,
+				1902E790153E0C7B00809FED /* RemoveMed.xib */,
+				1902E798153E138A00809FED /* RemoveMeds.h */,
+				1902E799153E138A00809FED /* RemoveMeds.m */,
+				1902E79A153E138A00809FED /* RemoveMeds.xib */,
+				199881D41540B39A00251191 /* RemoveMedPatientsList.h */,
+				199881D51540B39A00251191 /* RemoveMedPatientsList.m */,
+				199881D61540B39A00251191 /* RemoveMedPatientsList.xib */,
+			);
+			name = Remove;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +305,6 @@
 				199123EE153F524500581FD2 /* userMenu.jpg in Resources */,
 				199123EF153F524500581FD2 /* waste.jpg in Resources */,
 				19EF12A4154067CC000D376E /* SelectPatientsListTableViewController.xib in Resources */,
-				19EF12AA154068C9000D376E /* MyPatientsTableViewController.xib in Resources */,
 				199881D81540B39A00251191 /* RemoveMedPatientsList.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +326,6 @@
 				1902E796153E125500809FED /* PatientList.m in Sources */,
 				1902E79B153E138A00809FED /* RemoveMeds.m in Sources */,
 				19EF12A3154067CC000D376E /* SelectPatientsListTableViewController.m in Sources */,
-				19EF12A9154068C9000D376E /* MyPatientsTableViewController.m in Sources */,
 				199881D71540B39A00251191 /* RemoveMedPatientsList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
