@@ -7,9 +7,13 @@
 //
 
 #import "PatientList.h"
+#import "SelectPatientsListTableViewController.h"
+#import "MyPatientsTableViewController.h"
 
 @implementation PatientList
 @synthesize Logo;
+@synthesize selectPatientsTableView;
+@synthesize myPatientsTableView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,11 +40,26 @@
     // Do any additional setup after loading the view from its nib.
     self.Logo.image = [UIImage imageNamed:@"logo.jpg"];
     [self.view addSubview:self.Logo];
+    
+    SelectPatientsListTableViewController *selectPatientsTVC = [[SelectPatientsListTableViewController alloc] initWithNibName:@"SelectPatientsListTableViewController" bundle:nil];
+    
+    MyPatientsTableViewController *myPatientsTVC = [[MyPatientsTableViewController alloc] initWithNibName:@"MyPatientsTableViewController" bundle:nil];
+    [selectPatientsTableView setDataSource:selectPatientsTVC];
+    [myPatientsTableView setDataSource:myPatientsTVC];
+    
+	[selectPatientsTableView setDelegate:selectPatientsTVC];
+    [myPatientsTableView setDelegate:myPatientsTVC];
+    
+	selectPatientsTableView = selectPatientsTVC.tableView;
+    myPatientsTableView = myPatientsTVC.tableView;
+        
 }
 
 - (void)viewDidUnload
 {
     [self setLogo:nil];
+    [self setSelectPatientsTableView:nil];
+    [self setMyPatientsTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -54,6 +73,8 @@
 
 - (void)dealloc {
     [Logo release];
+    [selectPatientsTableView release];
+    [myPatientsTableView release];
     [super dealloc];
 }
 @end

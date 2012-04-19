@@ -10,5 +10,7 @@
 
 @interface PatientList : UIViewController
 @property (retain, nonatomic) IBOutlet UIImageView *Logo;
+@property (retain, nonatomic) IBOutlet UITableView *selectPatientsTableView;
+@property (retain, nonatomic) IBOutlet UITableView *myPatientsTableView;
 
 @end
