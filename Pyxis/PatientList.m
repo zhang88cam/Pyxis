@@ -14,6 +14,10 @@
 @synthesize Logo;
 @synthesize selectPatientsTableView;
 @synthesize myPatientsTableView;
+@synthesize tabBar;
+@synthesize AcceptBarButton;
+@synthesize DeselectAllButton;
+@synthesize CancelButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +34,10 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
+}
+-(void)AcceptbuttonClicked
+{
+    NSLog(@"Accept button pressed");
 }
 
 #pragma mark - View lifecycle
@@ -52,6 +60,11 @@
     
 	selectPatientsTableView = selectPatientsTVC.tableView;
     myPatientsTableView = myPatientsTVC.tableView;
+    
+    self.tabBar.delegate = self;
+    
+    NSLog(@"%@", tabBar.items);
+    
         
 }
 
@@ -60,6 +73,10 @@
     [self setLogo:nil];
     [self setSelectPatientsTableView:nil];
     [self setMyPatientsTableView:nil];
+    [self setTabBar:nil];
+    [self setAcceptBarButton:nil];
+    [self setDeselectAllButton:nil];
+    [self setCancelButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -75,6 +92,19 @@
     [Logo release];
     [selectPatientsTableView release];
     [myPatientsTableView release];
+    [tabBar release];
+    [AcceptBarButton release];
+    [DeselectAllButton release];
+    [CancelButton release];
     [super dealloc];
+}
+
+#pragma mark - Tab Bar Delegate
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    if (item == self.AcceptBarButton) {
+        NSLog(@"Select accept");
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 @end

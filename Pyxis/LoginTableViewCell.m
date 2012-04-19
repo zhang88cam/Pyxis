@@ -71,6 +71,7 @@
 {
     
     [self.delegate performSelector:@selector(textFieldDidReturnWithIndexPath:) withObject:self.indexPath];
+    [textField resignFirstResponder];
     
 }
 

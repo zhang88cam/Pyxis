@@ -10,6 +10,8 @@
 
 #import "PatientList.h"
 
+#import "RemoveMeds.h"
+
 #import <QuartzCore/QuartzCore.h>
 
 
@@ -65,6 +67,19 @@
         PatientList *patientsList = [[PatientList alloc] initWithNibName:@"PatientList" bundle:nil];
         [self.navigationController pushViewController:patientsList animated:YES];
     }
+    bool ReinX = NO;
+    bool ReinY = NO;
+    if(pt.x >= self.Remove.frame.origin.x && pt.x <= self.Remove.frame.origin.x + self.Remove.frame.size.width)
+        ReinX = YES;
+    if(pt.y >= self.Remove.frame.origin.y && pt.y <= self.Remove.frame.origin.y + self.Remove.frame.size.height)
+        ReinY = YES;
+    if(ReinX && ReinY)
+    {
+        NSLog(@"Remove button is touched");
+        RemoveMeds *removeMedList = [[RemoveMeds alloc] initWithNibName:@"RemoveMeds" bundle:nil];
+        [self.navigationController pushViewController:removeMedList animated:YES];
+    }
+    
 }
 
 

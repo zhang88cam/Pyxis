@@ -8,7 +8,13 @@
 
 #import "RemoveMeds.h"
 
+#import "MyPatientsTableViewController.h"
+
+
 @implementation RemoveMeds
+@synthesize patientListTableView;
+@synthesize actionsTabBar;
+@synthesize mainMenuButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,10 +39,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    MyPatientsTableViewController *myPatientsTVC = [[MyPatientsTableViewController alloc] initWithNibName:@"MyPatientsTableViewController" bundle:nil];
+    [patientListTableView setDataSource:myPatientsTVC];
+    [patientListTableView setDelegate:myPatientsTVC];
+    patientListTableView = myPatientsTVC.tableView;
+    
+    self.actionsTabBar.delegate = self;
+
+    
 }
 
 - (void)viewDidUnload
 {
+    [self setPatientListTableView:nil];
+    [self setActionsTabBar:nil];
+    [self setMainMenuButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -48,4 +65,19 @@
 	return YES;
 }
 
+- (void)dealloc {
+    [patientListTableView release];
+    [actionsTabBar release];
+    [mainMenuButton release];
+    [super dealloc];
+}
+
+#pragma mark - Tab Bar Delegate
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    if (item == self.mainMenuButton) {
+        NSLog(@"Select Main Menu");
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
 @end

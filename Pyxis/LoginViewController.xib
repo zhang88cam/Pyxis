@@ -39,7 +39,7 @@
 					<object class="IBUITableView" id="237912399">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{540, 377}</string>
+						<string key="NSFrameSize">{540, 216}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="57638357"/>
@@ -62,7 +62,7 @@
 					<object class="IBUIButton" id="57638357">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{79, 435}, {131, 47}}</string>
+						<string key="NSFrame">{{63, 267}, {131, 47}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="958284085"/>
@@ -98,10 +98,9 @@
 					<object class="IBUIButton" id="958284085">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{320, 435}, {123, 47}}</string>
+						<string key="NSFrame">{{333, 267}, {123, 47}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:241</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -246,8 +245,8 @@
 						<reference key="object" ref="766721923"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="237912399"/>
-							<reference ref="958284085"/>
 							<reference ref="57638357"/>
+							<reference ref="958284085"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
