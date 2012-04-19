@@ -8,6 +8,8 @@
 
 #import "MainMenu.h"
 
+#import "PatientList.h"
+
 #import <QuartzCore/QuartzCore.h>
 
 
@@ -44,10 +46,27 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
--(IBAction)patientsPress:(id)sender
+
+#pragma mark - Touch Events
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    
+    UITouch *touch = [touches anyObject];
+    CGPoint pt = [touch locationInView:self.view];
+    bool inX = NO;
+    bool inY = NO;
+    if(pt.x >= self.Patients.frame.origin.x && pt.x <= self.Patients.frame.origin.x + self.Patients.frame.size.width)
+        inX = YES;
+    if(pt.y >= self.Patients.frame.origin.y && pt.y <= self.Patients.frame.origin.y + self.Patients.frame.size.height)
+        inY = YES;
+    if(inX && inY)
+    {
+        NSLog(@"Patients button is touched");
+        PatientList *patientsList = [[PatientList alloc] initWithNibName:@"PatientList" bundle:nil];
+        [self.navigationController pushViewController:patientsList animated:YES];
+    }
 }
+
 
 #pragma mark - View lifecycle
 

@@ -9,6 +9,7 @@
 #import "PatientList.h"
 
 @implementation PatientList
+@synthesize Logo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,10 +34,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.Logo.image = [UIImage imageNamed:@"logo.jpg"];
+    [self.view addSubview:self.Logo];
 }
 
 - (void)viewDidUnload
 {
+    [self setLogo:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -48,4 +52,8 @@
 	return YES;
 }
 
+- (void)dealloc {
+    [Logo release];
+    [super dealloc];
+}
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PatientList : UIViewController
+@property (retain, nonatomic) IBOutlet UIImageView *Logo;
 
 @end
