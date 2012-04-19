@@ -42,6 +42,8 @@
 		199123ED153F524500581FD2 /* unloadMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DF153F524500581FD2 /* unloadMenu.jpg */; };
 		199123EE153F524500581FD2 /* userMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123E0153F524500581FD2 /* userMenu.jpg */; };
 		199123EF153F524500581FD2 /* waste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123E1153F524500581FD2 /* waste.jpg */; };
+		199881D71540B39A00251191 /* RemoveMedPatientsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 199881D51540B39A00251191 /* RemoveMedPatientsList.m */; };
+		199881D81540B39A00251191 /* RemoveMedPatientsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199881D61540B39A00251191 /* RemoveMedPatientsList.xib */; };
 		19EF12A3154067CC000D376E /* SelectPatientsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EF12A1154067CC000D376E /* SelectPatientsListTableViewController.m */; };
 		19EF12A4154067CC000D376E /* SelectPatientsListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19EF12A2154067CC000D376E /* SelectPatientsListTableViewController.xib */; };
 		19EF12A9154068C9000D376E /* MyPatientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EF12A7154068C9000D376E /* MyPatientsTableViewController.m */; };
@@ -95,6 +97,9 @@
 		199123DF153F524500581FD2 /* unloadMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unloadMenu.jpg; sourceTree = "<group>"; };
 		199123E0153F524500581FD2 /* userMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = userMenu.jpg; sourceTree = "<group>"; };
 		199123E1153F524500581FD2 /* waste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = waste.jpg; sourceTree = "<group>"; };
+		199881D41540B39A00251191 /* RemoveMedPatientsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveMedPatientsList.h; sourceTree = "<group>"; };
+		199881D51540B39A00251191 /* RemoveMedPatientsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveMedPatientsList.m; sourceTree = "<group>"; };
+		199881D61540B39A00251191 /* RemoveMedPatientsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoveMedPatientsList.xib; sourceTree = "<group>"; };
 		19EF12A0154067CC000D376E /* SelectPatientsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPatientsListTableViewController.h; sourceTree = "<group>"; };
 		19EF12A1154067CC000D376E /* SelectPatientsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPatientsListTableViewController.m; sourceTree = "<group>"; };
 		19EF12A2154067CC000D376E /* SelectPatientsListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPatientsListTableViewController.xib; sourceTree = "<group>"; };
@@ -170,6 +175,9 @@
 				1902E793153E125500809FED /* PatientList.h */,
 				1902E794153E125500809FED /* PatientList.m */,
 				1902E795153E125500809FED /* PatientList.xib */,
+				199881D41540B39A00251191 /* RemoveMedPatientsList.h */,
+				199881D51540B39A00251191 /* RemoveMedPatientsList.m */,
+				199881D61540B39A00251191 /* RemoveMedPatientsList.xib */,
 				19EF12A6154068C9000D376E /* MyPatientsTableViewController.h */,
 				19EF12A7154068C9000D376E /* MyPatientsTableViewController.m */,
 				19EF12A8154068C9000D376E /* MyPatientsTableViewController.xib */,
@@ -290,6 +298,7 @@
 				199123EF153F524500581FD2 /* waste.jpg in Resources */,
 				19EF12A4154067CC000D376E /* SelectPatientsListTableViewController.xib in Resources */,
 				19EF12AA154068C9000D376E /* MyPatientsTableViewController.xib in Resources */,
+				199881D81540B39A00251191 /* RemoveMedPatientsList.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +320,7 @@
 				1902E79B153E138A00809FED /* RemoveMeds.m in Sources */,
 				19EF12A3154067CC000D376E /* SelectPatientsListTableViewController.m in Sources */,
 				19EF12A9154068C9000D376E /* MyPatientsTableViewController.m in Sources */,
+				199881D71540B39A00251191 /* RemoveMedPatientsList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

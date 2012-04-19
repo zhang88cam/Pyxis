@@ -1,25 +1,21 @@
 //
-//  RemoveMeds.m
+//  RemoveMedPatientsList.m
 //  Pyxis
 //
-//  Created by Qiuhao Zhang on 4/17/12.
+//  Created by Qiuhao Zhang on 4/19/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "RemoveMeds.h"
-
 #import <QuartzCore/QuartzCore.h>
 
-#import "RemoveMed.h"
+#import "RemoveMedPatientsList.h"
+#import "RemoveMeds.h"
 
-
-@implementation RemoveMeds
+@implementation RemoveMedPatientsList
 @synthesize Logo;
 @synthesize patientListTableView;
-@synthesize actionsTabBar;
-@synthesize removeSelectionButton;
+@synthesize actionTabBar;
 @synthesize mainMenuButton;
-@synthesize patientListButton;
 @synthesize exitButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -43,6 +39,7 @@
 - (IBAction)exitButtonPressed:(id)sender 
 {
     [self.navigationController popToRootViewControllerAnimated:YES];
+
 }
 
 #pragma mark - View lifecycle
@@ -54,28 +51,21 @@
     self.Logo.image = [UIImage imageNamed:@"logo.jpg"];
     [self.view addSubview:self.Logo];
     
+    [self.exitButton.layer setBorderColor: [[UIColor blackColor] CGColor]];
+    [self.exitButton.layer setBorderWidth: 1.0];   
+
     patientListTableView.dataSource = self;
     patientListTableView.delegate = self;
-
     
-    self.actionsTabBar.delegate = self;
-    self.removeSelectionButton.title = nil;
-    self.removeSelectionButton.enabled = NO;
-    
-    [self.exitButton.layer setBorderColor: [[UIColor blackColor] CGColor]];
-    [self.exitButton.layer setBorderWidth: 1.0];    
-
-    
+    self.actionTabBar.delegate = self;
 }
 
 - (void)viewDidUnload
 {
-    [self setPatientListTableView:nil];
-    [self setActionsTabBar:nil];
-    [self setMainMenuButton:nil];
     [self setLogo:nil];
-    [self setRemoveSelectionButton:nil];
-    [self setPatientListButton:nil];
+    [self setPatientListTableView:nil];
+    [self setActionTabBar:nil];
+    [self setMainMenuButton:nil];
     [self setExitButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -89,12 +79,10 @@
 }
 
 - (void)dealloc {
-    [patientListTableView release];
-    [actionsTabBar release];
-    [mainMenuButton release];
     [Logo release];
-    [removeSelectionButton release];
-    [patientListButton release];
+    [patientListTableView release];
+    [actionTabBar release];
+    [mainMenuButton release];
     [exitButton release];
     [super dealloc];
 }
@@ -104,18 +92,13 @@
 {
     if (item == self.mainMenuButton) {
         NSLog(@"Select Main Menu");
-        [self.navigationController popToViewController:[[self.navigationController viewControllers] objectAtIndex:1] animated:YES];
-
-    }
-    if (item == self.removeSelectionButton) {
-        NSLog(@"Select remove selections");
-        RemoveMed *removeMedViewController = [[RemoveMed alloc] initWithNibName:@"RemoveMed" bundle:nil];
-        [self.navigationController pushViewController:removeMedViewController animated:YES];
-    }
-    if (item == self.patientListButton) {
-        NSLog(@"Select Patient List");
         [self.navigationController popViewControllerAnimated:YES];
     }
+//    if (item == self.removeSelectionButton) {
+//        NSLog(@"Select remove selections");
+//        RemoveMed *removeMedViewController = [[RemoveMed alloc] initWithNibName:@"RemoveMed" bundle:nil];
+//        [self.navigationController pushViewController:removeMedViewController animated:YES];
+//    }
 }
 
 #pragma mark - Table view data source
@@ -142,14 +125,14 @@
     }
     
     // Configure the cell...
-    cell.textLabel.text = @"Med";
+    cell.textLabel.text = @"Name";
     
     
     return cell;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"All Meds";
+    return @"My Patients";
 }
 
 #pragma mark - Table view delegate
@@ -157,9 +140,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    self.removeSelectionButton.title = @"Remove Selections";
-    self.removeSelectionButton.enabled = YES;
-
-    
+   
+     RemoveMeds *detailViewController = [[RemoveMeds alloc] initWithNibName:@"RemoveMeds" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     [detailViewController release];
+  
 }
 @end

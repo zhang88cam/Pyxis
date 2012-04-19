@@ -13,6 +13,7 @@
 @property (retain, nonatomic) IBOutlet UITableView *selectPatientsTableView;
 @property (retain, nonatomic) IBOutlet UITableView *myPatientsTableView;
 
+@property (retain, nonatomic) IBOutlet UIButton *exitButton;
 @property (retain, nonatomic) IBOutlet UITabBar *tabBar;
 @property (retain, nonatomic) IBOutlet UITabBarItem *AcceptBarButton;
 @property (retain, nonatomic) IBOutlet UITabBarItem *DeselectAllButton;

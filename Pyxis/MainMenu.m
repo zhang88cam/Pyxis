@@ -10,7 +10,7 @@
 
 #import "PatientList.h"
 
-#import "RemoveMeds.h"
+#import "RemoveMedPatientsList.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -31,6 +31,7 @@
 @synthesize UserMenu;
 @synthesize SystemMenu;
 @synthesize logo;
+@synthesize exitButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,6 +48,10 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
+}
+#pragma mark - Button Actions
+- (IBAction)exitButtonPressed:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - Touch Events
@@ -76,7 +81,7 @@
     if(ReinX && ReinY)
     {
         NSLog(@"Remove button is touched");
-        RemoveMeds *removeMedList = [[RemoveMeds alloc] initWithNibName:@"RemoveMeds" bundle:nil];
+        RemoveMedPatientsList *removeMedList = [[RemoveMedPatientsList alloc] initWithNibName:@"RemoveMedPatientsList" bundle:nil];
         [self.navigationController pushViewController:removeMedList animated:YES];
     }
     
@@ -91,6 +96,9 @@
     // Do any additional setup after loading the view from its nib.
     self.logo.image = [UIImage imageNamed:@"logo.jpg"];
     [self.view addSubview:self.logo];
+    
+    [self.exitButton.layer setBorderColor: [[UIColor blackColor] CGColor]];
+    [self.exitButton.layer setBorderWidth: 1.0];    
     
     self.Remove.image = [UIImage imageNamed:@"remove.jpg"];
     [self.Remove.layer setBorderColor: [[UIColor blackColor] CGColor]];
@@ -184,6 +192,7 @@
     [self setUserMenu:nil];
     [self setSystemMenu:nil];
     [self setLogo:nil];
+    [self setExitButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -211,6 +220,7 @@
     [UserMenu release];
     [SystemMenu release];
     [logo release];
+    [exitButton release];
     [super dealloc];
 }
 @end

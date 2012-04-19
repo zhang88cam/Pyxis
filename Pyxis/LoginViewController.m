@@ -65,7 +65,7 @@
                                                        style:UITableViewStylePlain];
     self.loginTableView.dataSource = self;
     self.loginTableView.delegate = self;
-    [self.loginTableView reloadData];
+
 }
 
 - (void)viewDidUnload

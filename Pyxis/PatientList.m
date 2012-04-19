@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "PatientList.h"
 #import "SelectPatientsListTableViewController.h"
 #import "MyPatientsTableViewController.h"
@@ -14,6 +16,7 @@
 @synthesize Logo;
 @synthesize selectPatientsTableView;
 @synthesize myPatientsTableView;
+@synthesize exitButton;
 @synthesize tabBar;
 @synthesize AcceptBarButton;
 @synthesize DeselectAllButton;
@@ -35,9 +38,13 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
--(void)AcceptbuttonClicked
+
+
+#pragma mark - Button Actions
+- (IBAction)exitButtonPressed:(id)sender 
 {
-    NSLog(@"Accept button pressed");
+    [self.navigationController popToRootViewControllerAnimated:YES];
+
 }
 
 #pragma mark - View lifecycle
@@ -48,6 +55,9 @@
     // Do any additional setup after loading the view from its nib.
     self.Logo.image = [UIImage imageNamed:@"logo.jpg"];
     [self.view addSubview:self.Logo];
+    
+    [self.exitButton.layer setBorderColor: [[UIColor blackColor] CGColor]];
+    [self.exitButton.layer setBorderWidth: 1.0];   
     
     SelectPatientsListTableViewController *selectPatientsTVC = [[SelectPatientsListTableViewController alloc] initWithNibName:@"SelectPatientsListTableViewController" bundle:nil];
     
@@ -77,6 +87,7 @@
     [self setAcceptBarButton:nil];
     [self setDeselectAllButton:nil];
     [self setCancelButton:nil];
+    [self setExitButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -96,6 +107,7 @@
     [AcceptBarButton release];
     [DeselectAllButton release];
     [CancelButton release];
+    [exitButton release];
     [super dealloc];
 }
 

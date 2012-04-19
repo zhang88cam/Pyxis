@@ -27,5 +27,6 @@
 @property (retain, nonatomic) IBOutlet UIImageView *SystemMenu;
 
 @property (retain, nonatomic) IBOutlet UIImageView *logo;
+@property (retain, nonatomic) IBOutlet UIButton *exitButton;
 
 @end
