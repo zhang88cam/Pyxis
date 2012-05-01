@@ -8,16 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		1902E77F153E013500809FED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E77D153E013500809FED /* LoginViewController.m */; };
-		1902E780153E013500809FED /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E77E153E013500809FED /* LoginViewController.xib */; };
 		1902E783153E085800809FED /* LoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E782153E085800809FED /* LoginTableViewCell.m */; };
 		1902E787153E08AF00809FED /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E785153E08AF00809FED /* MainMenu.m */; };
-		1902E788153E08AF00809FED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E786153E08AF00809FED /* MainMenu.xib */; };
 		1902E791153E0C7B00809FED /* RemoveMed.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E78F153E0C7B00809FED /* RemoveMed.m */; };
 		1902E792153E0C7B00809FED /* RemoveMed.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E790153E0C7B00809FED /* RemoveMed.xib */; };
 		1902E796153E125500809FED /* PatientList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E794153E125500809FED /* PatientList.m */; };
-		1902E797153E125500809FED /* PatientList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E795153E125500809FED /* PatientList.xib */; };
 		1902E79B153E138A00809FED /* RemoveMeds.m in Sources */ = {isa = PBXBuildFile; fileRef = 1902E799153E138A00809FED /* RemoveMeds.m */; };
-		1902E79C153E138A00809FED /* RemoveMeds.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1902E79A153E138A00809FED /* RemoveMeds.xib */; };
+		19319188155046E2007D4FD0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1931917C155046E2007D4FD0 /* LoginViewController.xib */; };
+		19319189155046E2007D4FD0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1931917E155046E2007D4FD0 /* MainMenu.xib */; };
+		1931918A155046E2007D4FD0 /* PatientList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19319180155046E2007D4FD0 /* PatientList.xib */; };
+		1931918B155046E2007D4FD0 /* RemoveMedPatientsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19319182155046E2007D4FD0 /* RemoveMedPatientsList.xib */; };
+		1931918C155046E2007D4FD0 /* RemoveMeds.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19319184155046E2007D4FD0 /* RemoveMeds.xib */; };
+		1931918D155046E2007D4FD0 /* SelectPatientsListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19319186155046E2007D4FD0 /* SelectPatientsListTableViewController.xib */; };
+		1931919F1550470E007D4FD0 /* inventory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1931918F1550470E007D4FD0 /* inventory.jpg */; };
+		193191A01550470E007D4FD0 /* kits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191901550470E007D4FD0 /* kits.jpg */; };
+		193191A11550470E007D4FD0 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191911550470E007D4FD0 /* launch.jpg */; };
+		193191A21550470E007D4FD0 /* load.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191921550470E007D4FD0 /* load.jpg */; };
+		193191A31550470E007D4FD0 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191931550470E007D4FD0 /* logo.jpg */; };
+		193191A41550470E007D4FD0 /* outdate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191941550470E007D4FD0 /* outdate.jpg */; };
+		193191A51550470E007D4FD0 /* patient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191951550470E007D4FD0 /* patient.jpg */; };
+		193191A61550470E007D4FD0 /* patientSummary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191961550470E007D4FD0 /* patientSummary.jpg */; };
+		193191A71550470E007D4FD0 /* refill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191971550470E007D4FD0 /* refill.jpg */; };
+		193191A81550470E007D4FD0 /* remove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191981550470E007D4FD0 /* remove.jpg */; };
+		193191A91550470E007D4FD0 /* reportMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 193191991550470E007D4FD0 /* reportMenu.jpg */; };
+		193191AA1550470E007D4FD0 /* return.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1931919A1550470E007D4FD0 /* return.jpg */; };
+		193191AB1550470E007D4FD0 /* systemMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1931919B1550470E007D4FD0 /* systemMenu.jpg */; };
+		193191AC1550470E007D4FD0 /* unloadMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1931919C1550470E007D4FD0 /* unloadMenu.jpg */; };
+		193191AD1550470E007D4FD0 /* userMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1931919D1550470E007D4FD0 /* userMenu.jpg */; };
+		193191AE1550470E007D4FD0 /* waste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1931919E1550470E007D4FD0 /* waste.jpg */; };
 		198B9E1C153DDCC000AC3606 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198B9E1B153DDCC000AC3606 /* UIKit.framework */; };
 		198B9E1E153DDCC000AC3606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198B9E1D153DDCC000AC3606 /* Foundation.framework */; };
 		198B9E20153DDCC000AC3606 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198B9E1F153DDCC000AC3606 /* CoreGraphics.framework */; };
@@ -26,46 +44,46 @@
 		198B9E2C153DDCC000AC3606 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 198B9E2B153DDCC000AC3606 /* AppDelegate.m */; };
 		198B9E2F153DDCC000AC3606 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198B9E2E153DDCC000AC3606 /* ViewController.m */; };
 		198B9E32153DDCC000AC3606 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 198B9E30153DDCC000AC3606 /* ViewController.xib */; };
-		199123D0153F4F7E00581FD2 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123CE153F4F7E00581FD2 /* launch.jpg */; };
-		199123D1153F4F7E00581FD2 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123CF153F4F7E00581FD2 /* logo.jpg */; };
-		199123E2153F524500581FD2 /* inventory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D4153F524500581FD2 /* inventory.jpg */; };
-		199123E3153F524500581FD2 /* kits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D5153F524500581FD2 /* kits.jpg */; };
-		199123E4153F524500581FD2 /* load.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D6153F524500581FD2 /* load.jpg */; };
-		199123E5153F524500581FD2 /* outdate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D7153F524500581FD2 /* outdate.jpg */; };
-		199123E6153F524500581FD2 /* patient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D8153F524500581FD2 /* patient.jpg */; };
-		199123E7153F524500581FD2 /* patientSummary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123D9153F524500581FD2 /* patientSummary.jpg */; };
-		199123E8153F524500581FD2 /* refill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DA153F524500581FD2 /* refill.jpg */; };
-		199123E9153F524500581FD2 /* remove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DB153F524500581FD2 /* remove.jpg */; };
-		199123EA153F524500581FD2 /* reportMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DC153F524500581FD2 /* reportMenu.jpg */; };
-		199123EB153F524500581FD2 /* return.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DD153F524500581FD2 /* return.jpg */; };
-		199123EC153F524500581FD2 /* systemMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DE153F524500581FD2 /* systemMenu.jpg */; };
-		199123ED153F524500581FD2 /* unloadMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123DF153F524500581FD2 /* unloadMenu.jpg */; };
-		199123EE153F524500581FD2 /* userMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123E0153F524500581FD2 /* userMenu.jpg */; };
-		199123EF153F524500581FD2 /* waste.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 199123E1153F524500581FD2 /* waste.jpg */; };
 		199881D71540B39A00251191 /* RemoveMedPatientsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 199881D51540B39A00251191 /* RemoveMedPatientsList.m */; };
-		199881D81540B39A00251191 /* RemoveMedPatientsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199881D61540B39A00251191 /* RemoveMedPatientsList.xib */; };
 		19EF12A3154067CC000D376E /* SelectPatientsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EF12A1154067CC000D376E /* SelectPatientsListTableViewController.m */; };
-		19EF12A4154067CC000D376E /* SelectPatientsListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19EF12A2154067CC000D376E /* SelectPatientsListTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1902E77C153E013500809FED /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		1902E77D153E013500809FED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		1902E77E153E013500809FED /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		1902E781153E085800809FED /* LoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTableViewCell.h; sourceTree = "<group>"; };
 		1902E782153E085800809FED /* LoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTableViewCell.m; sourceTree = "<group>"; };
 		1902E784153E08AF00809FED /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		1902E785153E08AF00809FED /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
-		1902E786153E08AF00809FED /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		1902E78E153E0C7B00809FED /* RemoveMed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveMed.h; sourceTree = "<group>"; };
 		1902E78F153E0C7B00809FED /* RemoveMed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveMed.m; sourceTree = "<group>"; };
 		1902E790153E0C7B00809FED /* RemoveMed.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoveMed.xib; sourceTree = "<group>"; };
 		1902E793153E125500809FED /* PatientList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientList.h; sourceTree = "<group>"; };
 		1902E794153E125500809FED /* PatientList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientList.m; sourceTree = "<group>"; };
-		1902E795153E125500809FED /* PatientList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientList.xib; sourceTree = "<group>"; };
 		1902E798153E138A00809FED /* RemoveMeds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveMeds.h; sourceTree = "<group>"; };
 		1902E799153E138A00809FED /* RemoveMeds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveMeds.m; sourceTree = "<group>"; };
-		1902E79A153E138A00809FED /* RemoveMeds.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoveMeds.xib; sourceTree = "<group>"; };
+		1931917D155046E2007D4FD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Pyxis/en.lproj/LoginViewController.xib; sourceTree = "<group>"; };
+		1931917F155046E2007D4FD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Pyxis/en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		19319181155046E2007D4FD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Pyxis/en.lproj/PatientList.xib; sourceTree = "<group>"; };
+		19319183155046E2007D4FD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Pyxis/en.lproj/RemoveMedPatientsList.xib; sourceTree = "<group>"; };
+		19319185155046E2007D4FD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Pyxis/en.lproj/RemoveMeds.xib; sourceTree = "<group>"; };
+		19319187155046E2007D4FD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Pyxis/en.lproj/SelectPatientsListTableViewController.xib; sourceTree = "<group>"; };
+		1931918F1550470E007D4FD0 /* inventory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = inventory.jpg; path = Resource/inventory.jpg; sourceTree = "<group>"; };
+		193191901550470E007D4FD0 /* kits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kits.jpg; path = Resource/kits.jpg; sourceTree = "<group>"; };
+		193191911550470E007D4FD0 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launch.jpg; path = Resource/launch.jpg; sourceTree = "<group>"; };
+		193191921550470E007D4FD0 /* load.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = load.jpg; path = Resource/load.jpg; sourceTree = "<group>"; };
+		193191931550470E007D4FD0 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = Resource/logo.jpg; sourceTree = "<group>"; };
+		193191941550470E007D4FD0 /* outdate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = outdate.jpg; path = Resource/outdate.jpg; sourceTree = "<group>"; };
+		193191951550470E007D4FD0 /* patient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = patient.jpg; path = Resource/patient.jpg; sourceTree = "<group>"; };
+		193191961550470E007D4FD0 /* patientSummary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = patientSummary.jpg; path = Resource/patientSummary.jpg; sourceTree = "<group>"; };
+		193191971550470E007D4FD0 /* refill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = refill.jpg; path = Resource/refill.jpg; sourceTree = "<group>"; };
+		193191981550470E007D4FD0 /* remove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = remove.jpg; path = Resource/remove.jpg; sourceTree = "<group>"; };
+		193191991550470E007D4FD0 /* reportMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = reportMenu.jpg; path = Resource/reportMenu.jpg; sourceTree = "<group>"; };
+		1931919A1550470E007D4FD0 /* return.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = return.jpg; path = Resource/return.jpg; sourceTree = "<group>"; };
+		1931919B1550470E007D4FD0 /* systemMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = systemMenu.jpg; path = Resource/systemMenu.jpg; sourceTree = "<group>"; };
+		1931919C1550470E007D4FD0 /* unloadMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = unloadMenu.jpg; path = Resource/unloadMenu.jpg; sourceTree = "<group>"; };
+		1931919D1550470E007D4FD0 /* userMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = userMenu.jpg; path = Resource/userMenu.jpg; sourceTree = "<group>"; };
+		1931919E1550470E007D4FD0 /* waste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = waste.jpg; path = Resource/waste.jpg; sourceTree = "<group>"; };
 		198B9E17153DDCC000AC3606 /* Pyxis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pyxis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198B9E1B153DDCC000AC3606 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		198B9E1D153DDCC000AC3606 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,28 +97,10 @@
 		198B9E2D153DDCC000AC3606 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		198B9E2E153DDCC000AC3606 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		198B9E31153DDCC000AC3606 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		199123CE153F4F7E00581FD2 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
-		199123CF153F4F7E00581FD2 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
-		199123D4153F524500581FD2 /* inventory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inventory.jpg; sourceTree = "<group>"; };
-		199123D5153F524500581FD2 /* kits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kits.jpg; sourceTree = "<group>"; };
-		199123D6153F524500581FD2 /* load.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = load.jpg; sourceTree = "<group>"; };
-		199123D7153F524500581FD2 /* outdate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outdate.jpg; sourceTree = "<group>"; };
-		199123D8153F524500581FD2 /* patient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = patient.jpg; sourceTree = "<group>"; };
-		199123D9153F524500581FD2 /* patientSummary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = patientSummary.jpg; sourceTree = "<group>"; };
-		199123DA153F524500581FD2 /* refill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = refill.jpg; sourceTree = "<group>"; };
-		199123DB153F524500581FD2 /* remove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = remove.jpg; sourceTree = "<group>"; };
-		199123DC153F524500581FD2 /* reportMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reportMenu.jpg; sourceTree = "<group>"; };
-		199123DD153F524500581FD2 /* return.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = return.jpg; sourceTree = "<group>"; };
-		199123DE153F524500581FD2 /* systemMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = systemMenu.jpg; sourceTree = "<group>"; };
-		199123DF153F524500581FD2 /* unloadMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unloadMenu.jpg; sourceTree = "<group>"; };
-		199123E0153F524500581FD2 /* userMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = userMenu.jpg; sourceTree = "<group>"; };
-		199123E1153F524500581FD2 /* waste.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = waste.jpg; sourceTree = "<group>"; };
 		199881D41540B39A00251191 /* RemoveMedPatientsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveMedPatientsList.h; sourceTree = "<group>"; };
 		199881D51540B39A00251191 /* RemoveMedPatientsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveMedPatientsList.m; sourceTree = "<group>"; };
-		199881D61540B39A00251191 /* RemoveMedPatientsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoveMedPatientsList.xib; sourceTree = "<group>"; };
 		19EF12A0154067CC000D376E /* SelectPatientsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPatientsListTableViewController.h; sourceTree = "<group>"; };
 		19EF12A1154067CC000D376E /* SelectPatientsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPatientsListTableViewController.m; sourceTree = "<group>"; };
-		19EF12A2154067CC000D376E /* SelectPatientsListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPatientsListTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +117,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1931918E155046EC007D4FD0 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				1931917C155046E2007D4FD0 /* LoginViewController.xib */,
+				1931917E155046E2007D4FD0 /* MainMenu.xib */,
+				19319180155046E2007D4FD0 /* PatientList.xib */,
+				19319182155046E2007D4FD0 /* RemoveMedPatientsList.xib */,
+				19319184155046E2007D4FD0 /* RemoveMeds.xib */,
+				19319186155046E2007D4FD0 /* SelectPatientsListTableViewController.xib */,
+			);
+			name = xibs;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		198B9E0C153DDCC000AC3606 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +161,7 @@
 		198B9E21153DDCC000AC3606 /* Pyxis */ = {
 			isa = PBXGroup;
 			children = (
+				1931918E155046EC007D4FD0 /* xibs */,
 				199123D3153F4F8800581FD2 /* images */,
 				198B9E2A153DDCC000AC3606 /* AppDelegate.h */,
 				198B9E2B153DDCC000AC3606 /* AppDelegate.m */,
@@ -155,12 +170,10 @@
 				198B9E30153DDCC000AC3606 /* ViewController.xib */,
 				1902E77C153E013500809FED /* LoginViewController.h */,
 				1902E77D153E013500809FED /* LoginViewController.m */,
-				1902E77E153E013500809FED /* LoginViewController.xib */,
 				1902E781153E085800809FED /* LoginTableViewCell.h */,
 				1902E782153E085800809FED /* LoginTableViewCell.m */,
 				1902E784153E08AF00809FED /* MainMenu.h */,
 				1902E785153E08AF00809FED /* MainMenu.m */,
-				1902E786153E08AF00809FED /* MainMenu.xib */,
 				199881DA1540C2FE00251191 /* Remove */,
 				199881D91540C2E700251191 /* Patients */,
 				198B9E22153DDCC000AC3606 /* Supporting Files */,
@@ -182,22 +195,22 @@
 		199123D3153F4F8800581FD2 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				199123D4153F524500581FD2 /* inventory.jpg */,
-				199123D5153F524500581FD2 /* kits.jpg */,
-				199123D6153F524500581FD2 /* load.jpg */,
-				199123D7153F524500581FD2 /* outdate.jpg */,
-				199123D8153F524500581FD2 /* patient.jpg */,
-				199123D9153F524500581FD2 /* patientSummary.jpg */,
-				199123DA153F524500581FD2 /* refill.jpg */,
-				199123DB153F524500581FD2 /* remove.jpg */,
-				199123DC153F524500581FD2 /* reportMenu.jpg */,
-				199123DD153F524500581FD2 /* return.jpg */,
-				199123DE153F524500581FD2 /* systemMenu.jpg */,
-				199123DF153F524500581FD2 /* unloadMenu.jpg */,
-				199123E0153F524500581FD2 /* userMenu.jpg */,
-				199123E1153F524500581FD2 /* waste.jpg */,
-				199123CE153F4F7E00581FD2 /* launch.jpg */,
-				199123CF153F4F7E00581FD2 /* logo.jpg */,
+				1931918F1550470E007D4FD0 /* inventory.jpg */,
+				193191901550470E007D4FD0 /* kits.jpg */,
+				193191911550470E007D4FD0 /* launch.jpg */,
+				193191921550470E007D4FD0 /* load.jpg */,
+				193191931550470E007D4FD0 /* logo.jpg */,
+				193191941550470E007D4FD0 /* outdate.jpg */,
+				193191951550470E007D4FD0 /* patient.jpg */,
+				193191961550470E007D4FD0 /* patientSummary.jpg */,
+				193191971550470E007D4FD0 /* refill.jpg */,
+				193191981550470E007D4FD0 /* remove.jpg */,
+				193191991550470E007D4FD0 /* reportMenu.jpg */,
+				1931919A1550470E007D4FD0 /* return.jpg */,
+				1931919B1550470E007D4FD0 /* systemMenu.jpg */,
+				1931919C1550470E007D4FD0 /* unloadMenu.jpg */,
+				1931919D1550470E007D4FD0 /* userMenu.jpg */,
+				1931919E1550470E007D4FD0 /* waste.jpg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -207,10 +220,8 @@
 			children = (
 				1902E793153E125500809FED /* PatientList.h */,
 				1902E794153E125500809FED /* PatientList.m */,
-				1902E795153E125500809FED /* PatientList.xib */,
 				19EF12A0154067CC000D376E /* SelectPatientsListTableViewController.h */,
 				19EF12A1154067CC000D376E /* SelectPatientsListTableViewController.m */,
-				19EF12A2154067CC000D376E /* SelectPatientsListTableViewController.xib */,
 			);
 			name = Patients;
 			sourceTree = "<group>";
@@ -223,10 +234,8 @@
 				1902E790153E0C7B00809FED /* RemoveMed.xib */,
 				1902E798153E138A00809FED /* RemoveMeds.h */,
 				1902E799153E138A00809FED /* RemoveMeds.m */,
-				1902E79A153E138A00809FED /* RemoveMeds.xib */,
 				199881D41540B39A00251191 /* RemoveMedPatientsList.h */,
 				199881D51540B39A00251191 /* RemoveMedPatientsList.m */,
-				199881D61540B39A00251191 /* RemoveMedPatientsList.xib */,
 			);
 			name = Remove;
 			sourceTree = "<group>";
@@ -283,29 +292,29 @@
 			files = (
 				198B9E26153DDCC000AC3606 /* InfoPlist.strings in Resources */,
 				198B9E32153DDCC000AC3606 /* ViewController.xib in Resources */,
-				1902E780153E013500809FED /* LoginViewController.xib in Resources */,
-				1902E788153E08AF00809FED /* MainMenu.xib in Resources */,
 				1902E792153E0C7B00809FED /* RemoveMed.xib in Resources */,
-				1902E797153E125500809FED /* PatientList.xib in Resources */,
-				1902E79C153E138A00809FED /* RemoveMeds.xib in Resources */,
-				199123D0153F4F7E00581FD2 /* launch.jpg in Resources */,
-				199123D1153F4F7E00581FD2 /* logo.jpg in Resources */,
-				199123E2153F524500581FD2 /* inventory.jpg in Resources */,
-				199123E3153F524500581FD2 /* kits.jpg in Resources */,
-				199123E4153F524500581FD2 /* load.jpg in Resources */,
-				199123E5153F524500581FD2 /* outdate.jpg in Resources */,
-				199123E6153F524500581FD2 /* patient.jpg in Resources */,
-				199123E7153F524500581FD2 /* patientSummary.jpg in Resources */,
-				199123E8153F524500581FD2 /* refill.jpg in Resources */,
-				199123E9153F524500581FD2 /* remove.jpg in Resources */,
-				199123EA153F524500581FD2 /* reportMenu.jpg in Resources */,
-				199123EB153F524500581FD2 /* return.jpg in Resources */,
-				199123EC153F524500581FD2 /* systemMenu.jpg in Resources */,
-				199123ED153F524500581FD2 /* unloadMenu.jpg in Resources */,
-				199123EE153F524500581FD2 /* userMenu.jpg in Resources */,
-				199123EF153F524500581FD2 /* waste.jpg in Resources */,
-				19EF12A4154067CC000D376E /* SelectPatientsListTableViewController.xib in Resources */,
-				199881D81540B39A00251191 /* RemoveMedPatientsList.xib in Resources */,
+				19319188155046E2007D4FD0 /* LoginViewController.xib in Resources */,
+				19319189155046E2007D4FD0 /* MainMenu.xib in Resources */,
+				1931918A155046E2007D4FD0 /* PatientList.xib in Resources */,
+				1931918B155046E2007D4FD0 /* RemoveMedPatientsList.xib in Resources */,
+				1931918C155046E2007D4FD0 /* RemoveMeds.xib in Resources */,
+				1931918D155046E2007D4FD0 /* SelectPatientsListTableViewController.xib in Resources */,
+				1931919F1550470E007D4FD0 /* inventory.jpg in Resources */,
+				193191A01550470E007D4FD0 /* kits.jpg in Resources */,
+				193191A11550470E007D4FD0 /* launch.jpg in Resources */,
+				193191A21550470E007D4FD0 /* load.jpg in Resources */,
+				193191A31550470E007D4FD0 /* logo.jpg in Resources */,
+				193191A41550470E007D4FD0 /* outdate.jpg in Resources */,
+				193191A51550470E007D4FD0 /* patient.jpg in Resources */,
+				193191A61550470E007D4FD0 /* patientSummary.jpg in Resources */,
+				193191A71550470E007D4FD0 /* refill.jpg in Resources */,
+				193191A81550470E007D4FD0 /* remove.jpg in Resources */,
+				193191A91550470E007D4FD0 /* reportMenu.jpg in Resources */,
+				193191AA1550470E007D4FD0 /* return.jpg in Resources */,
+				193191AB1550470E007D4FD0 /* systemMenu.jpg in Resources */,
+				193191AC1550470E007D4FD0 /* unloadMenu.jpg in Resources */,
+				193191AD1550470E007D4FD0 /* userMenu.jpg in Resources */,
+				193191AE1550470E007D4FD0 /* waste.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +342,54 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1931917C155046E2007D4FD0 /* LoginViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1931917D155046E2007D4FD0 /* en */,
+			);
+			name = LoginViewController.xib;
+			sourceTree = "<group>";
+		};
+		1931917E155046E2007D4FD0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1931917F155046E2007D4FD0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		19319180155046E2007D4FD0 /* PatientList.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19319181155046E2007D4FD0 /* en */,
+			);
+			name = PatientList.xib;
+			sourceTree = "<group>";
+		};
+		19319182155046E2007D4FD0 /* RemoveMedPatientsList.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19319183155046E2007D4FD0 /* en */,
+			);
+			name = RemoveMedPatientsList.xib;
+			sourceTree = "<group>";
+		};
+		19319184155046E2007D4FD0 /* RemoveMeds.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19319185155046E2007D4FD0 /* en */,
+			);
+			name = RemoveMeds.xib;
+			sourceTree = "<group>";
+		};
+		19319186155046E2007D4FD0 /* SelectPatientsListTableViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19319187155046E2007D4FD0 /* en */,
+			);
+			name = SelectPatientsListTableViewController.xib;
+			sourceTree = "<group>";
+		};
 		198B9E24153DDCC000AC3606 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
